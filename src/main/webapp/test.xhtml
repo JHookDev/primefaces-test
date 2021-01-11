@@ -10,10 +10,291 @@
         <h:outputScript name="test.js" />
     </h:head>
     <h:body>
+        <h:outputStylesheet name="stylesheet.css"/>
 
         <h1>#{testView.string}</h1>
         <h:form id="frmTest">
-            
+            <style>.ui-menu .ui-menuitem-link.externalLinkIcon .ui-menuitem-icon {float: right;padding-top: 1px;}</style>
+            <p:menubar id="mainMenuBar" styleClass="ui-widget-header noBorder transparent">
+                <p:submenu label="Home" icon="fa fa-home">
+                    <p:menuitem value="My Work" />
+		            <p:menuitem value="My User Tasks" />
+                    <p:menuitem value="Doc Library" />
+                    <p:menuitem value="Change Password"/>
+                    <p:menuitem value="User Preferences" />
+                </p:submenu>
+
+                <p:submenu label="Point of Sale" icon="ui-icon-key">
+                    <p:menuitem value="Cash Drawer" />
+                    <p:menuitem value="Cash Management Administration" />
+                    <p:menuitem value="Export NACHA file" />
+                </p:submenu>
+                
+                <p:submenu label="Orders" icon="fa fa-shopping-cart">
+                    <p:menuitem value="New Order" />
+                    <p:menuitem value="New Corporate" />
+                    <p:menuitem value="Inventory Order Management" />
+                    <p:menuitem value="Change Order Management" />
+                    <p:menuitem value="SSA Order Management" />
+                    <p:menuitem value="Service Availability" />
+                </p:submenu>
+
+                <p:submenu label="Customer Care" icon="fa fa-user">
+                    <p:submenu label="Billing">
+                        <p:menuitem value="Start Billing" />
+                        <p:menuitem value="Posting" />
+                        <p:menuitem value="Post-Billing" />
+                    </p:submenu>
+                    <p:submenu label="Payment">
+                        <p:menuitem value="Record a Payment" />
+                        <p:menuitem value="Enter a Payment Batch" />
+                        <p:menuitem value="Maintain Payments &amp; Adjustments" />
+                        <p:menuitem value="Maintain External Payment Transactions" />
+                        <p:menuitem value="Maintain Retain Payments" />
+                        <p:separator></p:separator>
+                        <p:menuitem value="Import Payments" />
+                        <p:menuitem value="Payment Reports" />
+                        <p:separator></p:separator>
+                        <p:menuitem value="Run Autopay" />
+                    </p:submenu>
+                    <p:submenu label="Rating">
+                        <p:menuitem value="Rate Groups" />
+                        <p:menuitem value="Call Types" />
+                        <p:submenu label="International Codes">
+                            <p:menuitem value="Country Code Maintenance" />
+                            <p:menuitem value="Import International Codes" />
+                        </p:submenu>
+                        <p:submenu label="Domestic">
+                            <p:menuitem value="Base Price" />
+                            <p:menuitem value="Rate Control" />
+                            <p:menuitem value="Customer Rate Control" />
+                        </p:submenu>
+                        <p:submenu label="International">
+                            <p:menuitem value="Base Price" />
+                            <p:menuitem value="Rate Control" />
+                            <p:menuitem value="Customer Rate Control" />
+                        </p:submenu>
+                        <p:submenu label="Work Order">
+                            <p:menuitem value="Recent Missing Domestic Rates" />
+                                <p:menuitem value="Recent Missing International Rates" />
+                                <p:menuitem value="Recent Missing And Inactive Tids" />
+                        </p:submenu>
+                        <p:menuitem value="Customer Rate Group Override" />
+                        <p:menuitem value="Customer Method Override" />
+                        <p:menuitem value="Plans" />
+                        <p:menuitem value="Rate Tables" />
+                        
+                    </p:submenu>
+                    <p:menuitem value="Manage Customers" />
+                    <p:submenu label="Collections">
+                        <p:menuitem value="Collections Queue" />
+                        <p:menuitem value="Collections Add" />
+                        <p:menuitem value="Collections Exclusions" />
+                        <p:menuitem value="Collections Settings" />
+                    </p:submenu>
+                    <p:submenu label="Trouble Tickets">
+                        <p:menuitem value="Maintain Trouble Tickets" />
+                        <p:menuitem value="Add New Trouble Ticket" />
+                    </p:submenu>
+                    <p:submenu label="Notes">
+                        <p:menuitem value="Maintain Notes" />
+                        <p:menuitem value="Add New Note" />
+                    </p:submenu>	
+                </p:submenu>
+                
+                <p:submenu label="Reports" icon="fa fa-files-o">	
+                    <p:submenu label="Accounts Receivable" >
+                        <p:menuitem value="A/R Aging" />
+                        <p:menuitem value="A/R Point In Time" />
+                    </p:submenu>
+                    <p:submenu label="Financial">
+                        <p:menuitem value="Tax Report" title="Generate a summary of tax details aggregated by tax payer, jurisdiction level and tax code."/>
+                        <p:menuitem value="Taxing by PSB" title="Generate a summary of tax details aggregated by tax payer, customer, PSB, and tax code."/>
+                        <p:menuitem value="Taxing by Type" title="Generate a summary of tax details aggregated by tax payer and tax code."/>
+                        <p:menuitem value="Bill Register"  />
+                        <p:menuitem value="Bill Payment Summary" />
+                        <p:menuitem value="Compare Toll" />
+                        <p:menuitem value="Item Report" />
+                        <p:menuitem value="Revenue Summary" />
+                        <p:menuitem value="Charge Report" />
+                        <p:menuitem value="Compare Charges" />
+                    </p:submenu>
+                    <p:submenu label="Billing">
+                        <p:menuitem value="Edits" />
+                        <p:menuitem value="Re-Edits" />
+                        <p:menuitem value="Revenue" />
+                        <p:menuitem value="Prebilling" />
+                        <p:menuitem value="Payments / Charges" />
+                        <p:menuitem value="Bill Run" />
+                        <p:menuitem value="Invoicing" />
+                    </p:submenu>
+                    <p:menuitem value="Customer Info" />
+                    <p:submenu label="Credit Card">
+                        <p:menuitem value="Expiring Credit Cards" />
+                        <p:menuitem value="Credit Card Log" />
+                        <p:menuitem value="Credit Card Online Payment Log" />
+                        <p:menuitem value="Payment Log" />
+                    </p:submenu>
+                    <p:submenu label="Bill Management">
+                        <p:menuitem value="Invoice Control" />
+                        <p:menuitem value="Pull At Printer" />
+                    </p:submenu>
+                    <p:menuitem value="Payment Reports" />
+                    <p:submenu label="Workflow" >
+                        <p:menuitem value="Orders" />
+                        <p:menuitem value="Workflow Analysis" />
+                        <p:menuitem value="Workflow Milestones" />
+                    </p:submenu>
+                    <p:submenu label="Commissions" >
+                        <p:menuitem value="Commissions Report" /> 
+                    </p:submenu>
+                    <p:menuitem value="Query Tool" />
+                    <p:submenu label="PSB Reporting Layout">
+                        <p:menuitem value="Report Layout" />
+                        <p:menuitem value="Report Layout Category" />
+                    </p:submenu>
+                    <p:menuitem value="Log Tracking" />
+                    <p:menuitem value="Tax Rate Inquiry" />
+                    <p:submenu label="Billing Documentation">
+                        <p:menuitem value="Bill Register" />
+                        <p:menuitem value="Bill Register Details" />
+                        <p:menuitem value="Bill Register Grand Totals" />
+                    </p:submenu>
+                    <p:menuitem value="Executive Dashboard" />
+                </p:submenu>
+                
+                <p:submenu label="Admin" icon="fa fa-pencil-square-o">
+                    <p:submenu label="Setup">
+                        <p:submenu label="Security">
+                            <p:menuitem value="User" />
+                            <p:menuitem value="Role" />
+                            <p:menuitem value="Function" />
+                            <p:menuitem value="Reseller" />
+                        </p:submenu>
+                        <p:menuitem value="Sales Region/Office/Rep" />
+                        <p:submenu label="Product Catalog">
+                            <p:menuitem value="Item" />
+                            <p:menuitem value="Item Availability" />
+                            <p:menuitem value="Item Category" />
+                            <p:menuitem value="Tax Allocation" />
+                        </p:submenu>			
+                        <p:submenu label="Type Administration">
+                            <p:menuitem value="Address Types" />
+                            <p:menuitem value="Contact Types" />
+                            <p:menuitem value="Contract Types" />
+                            <p:menuitem value="Numbers Types" />
+                            <p:menuitem value="Trouble Ticket Types" />
+                        </p:submenu>
+                        <p:submenu label="User Defined Fields">
+                            <p:menuitem value="Misc Information" />
+                            <p:menuitem value="Feature ID" />
+                            <p:menuitem value="Tag Setup" />
+                            <p:menuitem value="Trouble Ticket Misc Info" />
+                            <p:menuitem value="Assign Trouble Ticket Type Categories" />
+                        </p:submenu>						
+                        <p:menuitem value="Bill Messages" />
+                        <p:submenu label="Accounting">
+                            <p:menuitem value="GL Setup" />
+                            <p:menuitem value="GL Taxing" />
+                        </p:submenu>			
+                        <p:submenu label="General">
+                            <p:menuitem value="Location" />
+                            <p:menuitem value="Sales Team" />
+                            <p:menuitem value="Call Type" />
+                            <p:menuitem value="Day Type" />
+                            <p:menuitem value="Call Mode" />
+                            <p:menuitem value="Product Group" />
+                            <p:menuitem value="Logo Option" />
+                            <p:menuitem value="Calling Card Type" />
+                            <p:menuitem value="Product-Service Group" />
+                            <p:menuitem value="Product-Service-Billing" />
+                            <p:menuitem value="PSB Description Set" />
+                            <p:menuitem value="Product Desc Override" />
+                        </p:submenu>
+                        <p:submenu label="Rating">
+                            <p:menuitem value="Rate Table" />
+                            <p:menuitem value="Rate Plan" />
+                            <p:menuitem value="Rate Control" />
+                            <p:menuitem value="Intl Band Desc" />
+                            <p:menuitem value="Intl City Code" />
+                            <p:menuitem value="Intl Rate Control" />
+                        </p:submenu>			
+                        <p:menuitem value="Links" />
+                        <p:menuitem value="Automated Billing" />
+                        <p:submenu label="Serviceable Addresses">
+                            <p:menuitem value="View Serviceable Addresses" />
+                            <p:menuitem value="Import Addresses" />
+                        </p:submenu>
+                        <p:submenu label="Channel Lineup">
+                            <p:menuitem value="Channel Lineup Management" />
+                            <p:menuitem value="View Channel Lineup Push History" />
+                        </p:submenu>
+                        <p:menuitem value="Search By" />
+                        <p:menuitem value="Custom Content" />
+                    </p:submenu>
+                    <p:menuitem value="Document Management" />
+                    <p:menuitem value="PDF Document Merge" />
+                    <p:submenu label="Utilities">
+                        <p:menuitem value="CPE Inventory" />
+                        <p:menuitem value="Numbers Inventory" />
+                        <p:menuitem value="Service Availability" />
+                        <p:submenu label="E911">
+                            <p:menuitem value="E911 Location Check" />
+                            <p:menuitem value="E911 TN Update" />
+                            <p:menuitem value="E911 Files" />
+                        </p:submenu>
+                        <p:submenu label="CNAM">
+                            <p:menuitem value="CNAM Update" />
+                            <p:menuitem value="CNAM Maintenance" />
+                        </p:submenu>
+                        <p:submenu label="PIC">
+                            <p:menuitem value="PIC Provisioning Create" />
+                            <p:menuitem value="PIC Provisioning Import" />
+                        </p:submenu>
+                        <p:submenu label="G/L Extract">
+                            <p:menuitem value="G/L Account Setup" />
+                            <p:menuitem value="G/L Account Mapping" />
+                            <p:menuitem value="Create G/L Extract" />
+                        </p:submenu>
+                        <p:menuitem value="File Import" />
+                        <p:menuitem value="File Modifications Import" />
+                        <p:menuitem value="Service Availability File Generation" />
+                        <p:menuitem value="Routing Number Database Import" />
+                        <p:menuitem value="PCode Updater" />
+                        <p:menuitem value="USAC Open Data" />
+                        <p:menuitem value="Maintain Release Notes" />
+                    </p:submenu>
+                    <p:menuitem value="Dashboard Messages" />
+                    <p:menuitem value="WorkFlow BPM" />
+                    <p:menuitem value="WorkFlow Builder" />
+                    <p:submenu label="Commissions">
+                        <p:menuitem value="Calculate" />
+                        <p:menuitem value="Qualify Commissions By Sales Level" />
+                        <p:menuitem value="Qualify Commissions By A/R" />
+                        <p:menuitem value="Review / Pay Commissions" />
+                        <p:separator></p:separator>		
+                        <p:menuitem value="Setup Sales Types" />
+                        <p:menuitem value="Setup Commission Plan Names" />
+                        <p:menuitem value="Setup Suggested Commission Plans" />
+                        <p:menuitem value="Setup Commission Basis Formulas" />
+                        <p:menuitem value="Setup Commission Plan Rates" />
+                        <p:menuitem value="Setup Customer Commission Plan Rates" />
+                        <p:menuitem value="Setup Corporate Commission Plan Rates" />
+                    </p:submenu>
+                    <p:menuitem value="Serviceable Addresses" />
+                    <p:menuitem value="e-bill Administration" /> 
+                    <p:menuitem value="Billing Documentation" />
+                    <p:menuitem value="Load Bill Files" />
+                </p:submenu>
+                            
+                <p:submenu label="Help" icon="fa fa-question">	
+                    <p:menuitem value="Videos/Links" />
+                    <p:menuitem value="About" />
+                    <p:menuitem value="Help - Wiki" icon="fa fa-external-link" />
+                    <p:menuitem value="Universal Trouble Ticket (UTT)" icon="fa fa-external-link" />
+                    <p:menuitem value="View Release Notes" />
+                </p:submenu>
+            </p:menubar>
         </h:form>
 
     </h:body>

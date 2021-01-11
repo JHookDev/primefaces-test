@@ -1,0 +1,190 @@
+/*Menu and Search - BEGIN */
+
+.ui-widget.labelMenuHeader {
+	font-size: 12px !important;
+	font-weight: bold;
+	color: #186ba0;
+	font-family: verdana, arial, sans-serif !important;
+}
+
+span.labelMenuHeader {
+	font-size: 12px !important;
+	font-weight: bold;
+	color: #186ba0;
+	font-family: verdana, arial, sans-serif !important;
+}
+
+.valueMenuHeader {
+	font-size: 12px;
+	font-family: verdana, arial, sans-serif;
+}
+
+.menuHeaderContainer {
+	border: 1px solid #d9d9d9;
+	background: -webkit-linear-gradient(top,#f6f7f9 0,#ebedf0 100%);
+}
+
+.menuHeaderLogo {
+	max-height: 32px;
+	width: auto;
+	width: auto\9; /* IE8 */
+}
+
+.menuHeaderClientLogoColumn {
+	padding-left: 2px;
+	width: 6%;
+}
+
+.menuHeaderMenuColumn {
+	width:90%;
+}
+
+.menuHeaderApplicationLogoColumn {
+	padding-right: 2px;
+	width: 2%;
+}
+
+.menuBarHorizontalSeparator {
+	margin-top: .2em;
+	margin-bottom: .2em;
+}
+
+.floatLeft {
+	float: left;
+}
+
+.floatRight {
+	float: right;
+}
+
+.ui-menubar.noBorder {
+	border: none;
+}
+
+.ui-widget-header.transparent {
+	background: rgba(0, 0, 0, 0.0);
+}
+
+#mainMenu\:menuBar\:mainMenuBar > ul {
+	display: flex;
+}
+
+#mainMenu\:menuBar\:mainMenuBar > ul > li.ui-menuitem.ui-menubar-options.ui-widget.ui-corner-all {
+	flex-grow: 1;
+}
+
+#mainMenu\:menuBar\:testEnvironmentMessagePanel {
+	margin-left: 10%;
+}
+/*Menu and Search - END */
+
+.ui-menuitem-text {
+	font-size: 12px;
+	font-family: "Open Sans",verdana,Arial,sans-serif;
+	color: black;
+}
+
+.ui-menuitem-active {
+	background-color:#dddddd;
+}
+
+.ui-menuitem-active:active {
+	background: #66afe9 !important;
+}
+ 
+.ui-menubar .ui-state-hover {
+	background-color:#dddddd;
+}
+
+.ui-menu-child {
+	width:23em;
+}
+
+.ui-menu-child {
+	width: 200px !important;
+}
+
+.ui-tooltip-text {
+	background-color: #66afe9 !important;
+}
+.ui-tooltip-text .ui-widget-content {
+	acolor:white;
+	abackground-color: transparent ;
+}
+.ui-tooltip-arrow {
+	border-left-color: #66afe9 !important;
+}
+
+#mainMenu\:quickSearchForm  {
+	font-size: 12px !important;
+	font-weight: bold;
+	color: #186ba0;
+	font-family: verdana, arial, sans-serif;
+	margin-right: 20px;
+}
+#mainMenu\:quickSearchForm .ui-widget {
+	font-size: 12px !important;
+	font-family: verdana, arial, sans-serif !important;
+}
+
+#mainMenu\:quickSearchForm\:startPageA_panel .ui-selectonemenu-item.ui-selectonemenu-list-item {
+	font-size: 12px !important;
+}
+#mainMenu\:quickSearchForm\:searchCat_panel .ui-selectonemenu-item.ui-selectonemenu-list-item {
+	font-size: 12px !important;
+}
+
+.ui-menuitem .ui-corner-all.ui-state-hover {
+    background-color: #66afe9;
+}
+.ui-menuitem .ui-corner-all.ui-state-hover, .ui-menuitem .ui-corner-all.ui-state-hover .ui-menuitem-text {
+    color: #ffffff; 
+}
+.ui-menuitem .ui-corner-all .ui-menuitem-active {
+	background-color: #66afe9;
+}
+.ui-menuitem .ui-corner-all .ui-state-hover .ui-menuitem-text {
+	color: #ffffff; 
+}
+.ui-menuitem .ui-corner-all .ui-state-hover .ui-icon-triangle-1-e {
+	background-image: url("#{resource['primefaces-omega:images/ui-icons_ffffff_256x240.png']}");
+}
+.ui-menuitem .ui-corner-all.ui-state-hover .ui-icon-triangle-1-s {
+	background-image: url("#{resource['primefaces-omega:images/ui-icons_ffffff_256x240.png']}");
+}
+
+.noBorderGrid .ui-datagrid-content, .noBorderGrid table td, .noBorderGrid .ui-panelgrid-content  {
+	border: none !important;
+}
+
+.menuItem td {
+	padding: 3px 8px;
+}
+.menuItem a{
+	text-decoration: none !important;
+	padding-top: 2px;
+}
+.menuItem:hover {
+	background: #66afe9;
+}
+.menuItem:hover a {
+	color: white;
+}
+
+.nopaddingtable, .nopaddingtable td  {
+	border: 0px !important;
+	padding: 0px !important;
+}
+
+.ui-menuitem .logoutbutton.ui-corner-all.ui-state-hover {
+	border: 1px solid #156090;
+    background: #1f89ce;
+}
+
+.noScrollDataTable {
+	display: table !important;
+	width: 100%;
+}
+.noScrollDataTable .ui-datatable-tablewrapper table {
+	table-layout: auto !important;
+}
